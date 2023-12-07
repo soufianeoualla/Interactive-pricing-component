@@ -8,23 +8,23 @@ const Card = () => {
         prices:{
             0:{
                 pageviews:'10k',
-                price: '8.00'
+                price: 8.00
             },
             1:{
                 pageviews:'50k',
-                price: '12.00'
+                price: 12.00
             },
             2:{
                 pageviews:'100k',
-                price: '16.00'
+                price: 16.00
             },
             3:{
                 pageviews:'500k',
-                price: '24.00'
+                price: 24.00
             },
             4:{
                 pageviews:'1M',
-                price: '36.00'
+                price: 36.00
             }
         }
     })
@@ -56,7 +56,7 @@ const Card = () => {
     <div className="card">
         <div className="top">
             <p>{pageviews} pageviews</p>
-            <p><span>${isYearly? price*0.75 : price} </span>/month</p>
+            <p><span>${isYearly? (price*0.75 + '.00') : price + '.00'} </span>/month</p>
         </div>
         <div className="slider">
           <input type="range"
